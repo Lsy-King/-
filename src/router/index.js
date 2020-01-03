@@ -79,6 +79,17 @@ export const constantRoutes = [
         meta: { title: '员工管理', icon: 'user' }
       }
     ]
+  },{
+    path: '/category',
+    component: Layout,
+    children: [
+      {
+        path: 'List',
+        name: 'categoryList',
+        component: () => import('@/pages/category/List'),
+        meta: { title: '栏目管理', icon: 'user' }
+      }
+    ]
   },
 
   // {
